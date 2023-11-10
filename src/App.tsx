@@ -1,3 +1,4 @@
+import { Toaster } from "@/components/ui/toaster";
 import { Route, Routes } from "react-router-dom";
 import AuthLayout from "./_auth/AuthLayout";
 import SigninForm from "./_auth/forms/SigninForm";
@@ -21,6 +22,8 @@ const App = () => {
           <Route index element={<Home />} />
         </Route>
       </Routes>
+
+      <Toaster />
     </main>
   );
 };
